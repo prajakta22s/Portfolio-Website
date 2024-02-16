@@ -1,0 +1,96 @@
+
+.about-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4rem;
+  background-color: white;
+  color: #0A192F;
+}
+.about-item{
+  
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  width: auto; /* Adjust width to ensure proper spacing */
+  margin: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.about-content {
+  flex: 1;
+  padding-left: 1rem;
+  text-align: left;
+}
+.college-degree {
+  font-weight: 600;
+  color: #0a192f;
+}
+.college-period {
+  font-style: italic;
+  color: #2c3e50;
+}
+.college-grade {
+  margin-top: 1rem;
+  color: #34495e;
+}
+
+.about-profile {
+  flex-basis: 40%; /* Adjust the size as needed */
+  text-align: center; /* Center the image if less than 100% width */
+}
+
+.profile-pic {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px; /* Adjust for slightly rounded corners */
+}
+
+.about-details {
+  flex-basis: 60%; /* Adjust the size as needed */
+  padding-left: 2rem; /* Spacing between image and text */
+}
+
+.header {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  text-align: left;
+}
+
+.btn{
+  margin-left: 15px;
+  background-color:#f0db4f;
+}
+
+.btn:hover{
+  background-color: #ffdd00;
+}
+.about-info {
+  flex-shrink: 0;
+}
+
+.about-info img {
+  width: 80px;
+  height: auto;
+}
+
+/* Rest of your styles */
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-profile,
+  .about-details {
+    flex-basis: 100%;
+  }
+
+  .about-details {
+    padding-left: 0;
+  }
+}

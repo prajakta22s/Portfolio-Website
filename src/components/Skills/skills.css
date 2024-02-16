@@ -1,0 +1,53 @@
+.skills-section {
+  padding: 4rem 1rem;
+  background-color: #0A192F; /* Adjust as needed */
+  color: #FFFFFF;
+}
+
+.skills-container {
+  max-width: 800px;
+  margin: auto;
+  text-align: center;
+}
+
+.skills-title {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.skill-item {
+  padding: 10px;
+  text-align: center;
+}
+
+.skill-icon {
+  font-size: 4rem;
+  color: #f0db4f;
+  margin-bottom: 0.5rem;
+}
+
+.slick-slide {
+  margin: 0 10px;
+}
+
+.slick-list {
+  overflow: visible; /* Makes the shadow visible */
+}
+
+.slick-dots li button:before {
+  color: #fff; /* Color of the dots */
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: #f0db4f; /* Color of the arrows */
+}
+
+/* Responsive styling for the slider */
+@media (max-width: 768px) {
+  .skill-icon {
+    font-size: 3rem;
+  }
+}
+
+/* Add additional responsive or aesthetic styles as needed */

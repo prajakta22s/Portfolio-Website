@@ -1,0 +1,133 @@
+#intro {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 100vh;
+  color: white;
+  background-color: #0A192F; /* Adding a background color */
+  padding: 2rem;
+  margin-left: 50px; /* Centers the content horizontally */
+  margin-right:50px;
+  margin: auto;
+}
+
+.introContent {
+  max-width: 100%; /* Full width on mobile */
+  padding: 1rem; /* Padding for mobile */
+}
+
+.hello {
+  font-size: 2rem;
+  font-weight: 300;
+}
+
+.introText {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+.introContent h3 {
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+}
+
+.introContent blink{
+  text-align: center;
+  
+  margin-left: 0.5rem;
+  border-right: 3px solid;
+  animation: blink 0.7s steps(1) infinite;
+  color:#f0db4f;
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+.introName {
+  color: #f0db4f; /* A golden yellow color */
+}
+
+.introPara {
+  font-size: 1rem;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.btn {
+  background: white;
+  margin-top: 1rem;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 2rem;
+  color: black;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #f0db4f;
+}
+
+.profile-pic-container {
+
+  width: 150px; /* Adjust width as needed */
+  height: 150px; /* Adjust height as needed */
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+}
+
+.bg {
+  width: 50%;
+  z-index: 1;
+
+  animation-name: floating;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  #intro {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .introContent {
+    max-width: 100%;
+    order: 2;
+  }
+
+  .profile-pic-container {
+    width: 120px; /* Even smaller on medium-sized screens */
+    height: 120px;
+  }
+
+  .hello {
+    font-size: 1.5rem;
+  }
+
+  .introText {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .btn {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.2rem;
+  }
+
+  .profile-pic-container {
+    width: 100px; /* Even smaller on small screens */
+    height: 100px;
+  }
+}
