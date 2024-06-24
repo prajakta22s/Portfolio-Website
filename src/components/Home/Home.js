@@ -38,7 +38,7 @@ const Home = () => {
   };
 
   const handleDownload = () => {
-    const url = "http://localhost:5173/PrajaktaBhavsar.pdf";
+    const url = "https://drive.google.com/file/d/1TZGo8Q8DTediX_cfpcZNKu19plDr8MpN/view?usp=sharing";
     downloadFileAtUrl(url);
   };
 
