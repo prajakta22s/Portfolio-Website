@@ -14,11 +14,12 @@
   align-items: center;
   max-width: 1200px;
   margin: 0 auto;
-  gap: 2rem;
+  
 }
 
 .home-text {
   text-align: center;
+  margin-top: 2rem;
 }
 
 .home-greeting,
